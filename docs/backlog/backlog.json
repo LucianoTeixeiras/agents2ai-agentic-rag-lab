@@ -68,5 +68,6 @@
   "prompt_catalog": "prompts/CATALOG.md",
   "reproducibility_doc": "08-REPRODUCIBILITY.md",
   "publication_blocked": false,
-  "manifest_snapshot_at": "2026-11-08T21:42:49-0300"
+  "manifest_snapshot_at": "2026-11-08T21:42:49-0300",
+  "publication_commit": "d3b673bac5cbc4a2a82eac480a7b1f4b614ad1e5"
 }
