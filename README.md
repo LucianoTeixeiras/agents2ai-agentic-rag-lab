@@ -15,9 +15,11 @@ Laboratório público **Agents2AI** — assistente com **RAG** sobre documentaç
 
 Projeto **AILAB** (issues AILAB-1..10). Links do Jira no mapa exigem **login** no site Atlassian do mantenedor; não são conteúdo público indexável como wiki aberta.
 
-Convenção para branch / commit / PR: prefixar com a chave Jira, ex. `AILAB-3`, mensagem `AILAB-3: …`.
+Convenção para branch / commit / PR: prefixar com a chave Jira, ex. branch `feature/AILAB-3-bootstrap`, commit `AILAB-3 chore(bootstrap): …`.
 
 Mapa e manifesto: [`docs/map/EPIC-TASK-MAP.md`](docs/map/EPIC-TASK-MAP.md) · [`docs/map/jira-manifest.json`](docs/map/jira-manifest.json)
+
+Catálogo de prompts: [`docs/prompts/README.md`](docs/prompts/README.md) — um arquivo por issue (`<CHAVE>_<slug>.md`), com prompt canônico, prompt executivo para o VS Code e histórico de versões. Instruções para agentes: [`AGENTS.md`](AGENTS.md).
 
 ## Índice
 
@@ -35,7 +37,9 @@ Mapa e manifesto: [`docs/map/EPIC-TASK-MAP.md`](docs/map/EPIC-TASK-MAP.md) · [`
 | [`docs/SOURCES.md`](docs/SOURCES.md) | Fontes oficiais |
 | [`docs/backlog/`](docs/backlog/) | Epic/issues e mapping |
 | [`docs/map/`](docs/map/) | Mapa + manifesto Jira |
-| [`prompts/`](prompts/) | Catálogo Issue-as-a-Prompt + templates |
+| [`docs/prompts/`](docs/prompts/) | Catálogo canônico Issue-as-a-Prompt (épicos, tasks, core rules, templates) |
+| [`docs/relatorios/`](docs/relatorios/) | Relatórios de fechamento por task |
+| [`AGENTS.md`](AGENTS.md) | Instruções para agentes de código no VS Code |
 
 ## Avisos
 
@@ -44,4 +48,4 @@ Mapa e manifesto: [`docs/map/EPIC-TASK-MAP.md`](docs/map/EPIC-TASK-MAP.md) · [`
 - Reprodutibilidade de **processo** ≠ determinismo de saídas LLM.
 - Nenhuma integração automática GitHub↔Jira é afirmada neste repo.
 
-Atualizado: 2026-11-09 10:22 America/Sao_Paulo
+Atualizado: 2026-11-09 14:21 America/Sao_Paulo

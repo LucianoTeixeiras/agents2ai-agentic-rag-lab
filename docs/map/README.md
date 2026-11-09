@@ -1,14 +1,14 @@
 # Mapa épicos/tasks — sincronia entre ambientes
 
-**Snapshot datado:** 2026-11-08 21:42 America/Sao_Paulo 
-**NÃO é sync automático.** Este mapa é manifesto estático versionado no Git (quando publicado). Status/prioridade operacionais vivem no **Jira**; docs/prompts versionados vivem no **Git**. Nenhuma integração app GitHub↔Jira é alegada.
+**Snapshot datado:** 2026-11-09 14:21 America/Sao_Paulo 
+**NÃO é sync automático.** Este mapa é manifesto estático versionado no Git. Status/prioridade operacionais vivem no **Jira**; docs/prompts versionados vivem no **Git**. Nenhuma integração app GitHub↔Jira é alegada.
 
 ## Fontes de verdade
 
 | Domínio | Fonte |
 | --- | --- |
 | Status, prioridade, assignee | Jira AILAB (operacional) |
-| Spec, ADRs, prompts, mapa | Git `docs/` (após publicação) — agora só local no docs-pack |
+| Spec, ADRs, prompts, mapa | Git `docs/` (prompts em `docs/prompts/`) |
 | Código / CI | Repo https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab (docs publicados; implementação de app ainda não iniciada) |
 
 ## Arquivos
@@ -18,6 +18,7 @@
 | [EPIC-TASK-MAP.md](EPIC-TASK-MAP.md) | Mapa legível humano |
 | [jira-manifest.json](jira-manifest.json) | Manifesto estruturado AILAB-1..10 |
 | [SYNC-CHECKLIST.md](SYNC-CHECKLIST.md) | Checklist manual de reconciliação Jira↔Git |
+| [../prompts/README.md](../prompts/README.md) | Catálogo canônico de prompts (um arquivo por issue) |
 
 ## Sequência (fase 1 → fase 2)
 

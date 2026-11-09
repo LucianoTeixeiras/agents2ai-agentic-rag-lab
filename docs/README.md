@@ -1,6 +1,6 @@
 # Pacote documental — Lab ANP GLP + agentes (MVP → fase 2 cloud)
 
-**Status:** docs ANP GLP + **mapa/manifesto** + **catálogo de prompts** (local) · **código não implementado** · **repo com docs (app não iniciada)** · AILAB-1..10 reutilizadas
+**Status:** docs ANP GLP + **mapa/manifesto** + **catálogo de prompts** (`docs/prompts/`) · **código não implementado** · **repo com docs (app não iniciada)** · AILAB-1..10 reutilizadas
 
 ## Estado atual
 
@@ -12,7 +12,7 @@
 | FakeProvider | Só testes/CI, **explicitamente rotulado** — não é o modelo da demo fase 2 |
 | Azure OpenAI / Databricks | **Fase 2 prática planejada** (credenciais/custo autorizados) — **sem provisionar agora** |
 | Implementação | **Não iniciada** |
-| Mapa / prompts | Versionados em `docs/map/` + `prompts/` |
+| Mapa / prompts | Versionados em `docs/map/` + `docs/prompts/` (catálogo canônico) |
 | Sync Jira↔Git | **Manual** (checklist); sem app integration |
 
 ## Índice
@@ -30,7 +30,8 @@
 | [SOURCES.md](SOURCES.md) | Fontes oficiais verificadas |
 | [backlog/](backlog/) | Epic/issues, mapping Jira, backlog.json |
 | [map/](map/) | Mapa épicos/tasks + manifesto Jira (snapshot datado, sem auto-sync) |
-| [../prompts/](../prompts/) | Catálogo Issue-as-a-Prompt + templates de execução |
+| [prompts/](prompts/) | Catálogo canônico Issue-as-a-Prompt (épicos, tasks, core rules, templates) |
+| [relatorios/](relatorios/) | Relatórios de fechamento por task |
 | [08-REPRODUCIBILITY.md](08-REPRODUCIBILITY.md) | Fontes de verdade, não-determinismo, sync manual |
 
 ## Sequência

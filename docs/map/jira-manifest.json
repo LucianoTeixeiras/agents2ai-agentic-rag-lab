@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "manifest_id": "ailab-jira-manifest",
-  "snapshot_at": "2026-11-08T21:42:49-0300",
+  "snapshot_at": "2026-11-09T14:21:35-0300",
   "snapshot_timezone": "America/Sao_Paulo",
   "snapshot_note": "Status/priority are a dated snapshot, NOT live auto-sync. Reconcile manually via SYNC-CHECKLIST.",
   "auto_sync": false,
@@ -12,7 +12,7 @@
     "github_commit": "d3b673bac5cbc4a2a82eac480a7b1f4b614ad1e5",
     "github_commit_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/commit/d3b673bac5cbc4a2a82eac480a7b1f4b614ad1e5",
     "github_pr": null,
-    "note": "Docs/prompts/mapa em main; implementação app não iniciada. URLs Jira exigem login do mantenedor."
+    "note": "Catálogo reestruturado (docs/prompts/). SHA da publicação: ver histórico Git do commit que altera este manifesto."
   },
   "jira": {
     "cloudId": "dde33714-3bda-4d37-949e-78d67404bd5e",
@@ -40,17 +40,21 @@
       "blocks": [],
       "blocked_by": [],
       "executor": "mixed",
-      "prompt_kind": "epic-context",
-      "prompt_id": "AILAB-PROMPT-000-EPIC",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-000-EPIC.v1.md",
+      "prompt_kind": "epic-architecture",
+      "prompt_id": "AILAB-1",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/epicos/AILAB-1_epic-lab-anp-glp-rag-mcp-fastapi.md",
       "deliverables": [
         "Visão épica",
         "Orquestração AILAB-2..10",
         "Critérios DoD fase 1"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-000-EPIC",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/epicos/AILAB-1_epic-lab-anp-glp-rag-mcp-fastapi.md",
+      "branch_suggested": null,
+      "commit_convention": null
     },
     {
       "temp": "LAB-01",
@@ -67,16 +71,20 @@
       ],
       "blocked_by": [],
       "executor": "humano",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-001-REVIEW-DOCS",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-001-REVIEW-DOCS.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-2",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-2_revisar-pacote-documental-anp-glp.md",
       "deliverables": [
         "Aceite humano ou lista de diffs",
         "ADRs permanecem Proposto até aceite"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-001-REVIEW-DOCS",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-2_revisar-pacote-documental-anp-glp.md",
+      "branch_suggested": "docs/AILAB-2-revisao-pacote",
+      "commit_convention": "AILAB-2 docs: registra revisão do pacote documental"
     },
     {
       "temp": "LAB-02",
@@ -96,19 +104,23 @@
         "AILAB-2"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-002-BOOTSTRAP",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-002-BOOTSTRAP.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-3",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-3_bootstrap-vscode-repo-existente.md",
       "deliverables": [
-        "docs/ no repo",
+        "pyproject + venv",
+        "src/ e tests/ mínimos",
         "README ANP",
-        ".gitignore",
-        "venv",
+        ".gitignore e .env.example",
         "zero secrets"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-002-BOOTSTRAP",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-3_bootstrap-vscode-repo-existente.md",
+      "branch_suggested": "feature/AILAB-3-bootstrap",
+      "commit_convention": "AILAB-3 chore(bootstrap): estrutura Python, venv e README"
     },
     {
       "temp": "LAB-03",
@@ -127,17 +139,21 @@
         "AILAB-3"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-003-RAG-DOCS",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-003-RAG-DOCS.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-4",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-4_rag-corpus-oficial-anp-citacoes.md",
       "deliverables": [
         "corpus oficial versionado",
         "retrieve+citations",
         "testes G01–G03"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-003-RAG-DOCS",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-4_rag-corpus-oficial-anp-citacoes.md",
+      "branch_suggested": "feature/AILAB-4-rag-docs",
+      "commit_convention": "AILAB-4 feat(rag): corpus oficial ANP com citações"
     },
     {
       "temp": "LAB-04",
@@ -156,10 +172,10 @@
         "AILAB-3"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-004-MCP-ANP",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-004-MCP-ANP.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-5",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-5_langgraph-mcp-anp-glp-readonly.md",
       "deliverables": [
         "cliente ANP paginado",
         "snapshot mínimo",
@@ -167,7 +183,11 @@
         "LangGraph"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-004-MCP-ANP",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-5_langgraph-mcp-anp-glp-readonly.md",
+      "branch_suggested": "feature/AILAB-5-mcp-anp",
+      "commit_convention": "AILAB-5 feat(mcp): servidor MCP read-only ANP GLP e grafo LangGraph"
     },
     {
       "temp": "LAB-05",
@@ -187,10 +207,10 @@
         "AILAB-5"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-005-FASTAPI-E2E",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-005-FASTAPI-E2E.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-6",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-6_fastapi-e2e-snapshot-live-optin.md",
       "deliverables": [
         "/health",
         "/ask",
@@ -198,7 +218,11 @@
         "e2e snapshot"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-005-FASTAPI-E2E",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-6_fastapi-e2e-snapshot-live-optin.md",
+      "branch_suggested": "feature/AILAB-6-fastapi-e2e",
+      "commit_convention": "AILAB-6 feat(api): endpoints /health e /ask ponta a ponta"
     },
     {
       "temp": "LAB-06",
@@ -217,10 +241,10 @@
         "AILAB-6"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-006-EVALS-GUARDRAILS",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-006-EVALS-GUARDRAILS.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-7",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-7_evals-tracing-guardrails-minimizacao.md",
       "deliverables": [
         "goldens",
         "trace_id",
@@ -228,7 +252,11 @@
         "política snapshot"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-006-EVALS-GUARDRAILS",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-7_evals-tracing-guardrails-minimizacao.md",
+      "branch_suggested": "feature/AILAB-7-evals-guardrails",
+      "commit_convention": "AILAB-7 feat(evals): goldens, tracing e guardrails"
     },
     {
       "temp": "LAB-07",
@@ -248,17 +276,21 @@
         "AILAB-7"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-007-CI-DEMO",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-007-CI-DEMO.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-8",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-8_ci-snapshot-demo-readme.md",
       "deliverables": [
         "CI sem live",
         "demo 5 min",
         "README atribuição/limites"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-007-CI-DEMO",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-8_ci-snapshot-demo-readme.md",
+      "branch_suggested": "feature/AILAB-8-ci-demo",
+      "commit_convention": "AILAB-8 ci: pipeline snapshot e roteiro de demo"
     },
     {
       "temp": "LAB-08",
@@ -275,17 +307,21 @@
         "AILAB-8"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-008-AZURE-OPENAI",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-008-AZURE-OPENAI.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-9",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-9_fase2-azure-openai-pratico.md",
       "deliverables": [
         "adapter Azure autorizado OU bloqueio explícito",
         "rollback fase 1",
         "zero secrets"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-008-AZURE-OPENAI",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-9_fase2-azure-openai-pratico.md",
+      "branch_suggested": "feature/AILAB-9-azure-openai",
+      "commit_convention": "AILAB-9 feat(llm): adapter Azure OpenAI"
     },
     {
       "temp": "LAB-09",
@@ -302,17 +338,21 @@
         "AILAB-8"
       ],
       "executor": "vscode",
-      "prompt_kind": "vscode-issue-as-prompt",
-      "prompt_id": "AILAB-PROMPT-009-DATABRICKS",
-      "prompt_version": "1.0.0",
-      "prompt_path": "prompts/vscode/AILAB-PROMPT-009-DATABRICKS.v1.md",
+      "prompt_kind": "issue-as-a-prompt",
+      "prompt_id": "AILAB-10",
+      "prompt_version": "2.0.0",
+      "prompt_path": "docs/prompts/tasks/AILAB-10_fase2-databricks-medallion-mlflow.md",
       "deliverables": [
         "pipeline B/S/G mínimo autorizado OU bloqueio",
         "MLflow mín. se viável",
         "VS opcional não artificial"
       ],
       "jira_status_snapshot": "A fazer",
-      "jira_priority_snapshot": "Medium"
+      "jira_priority_snapshot": "Medium",
+      "legacy_prompt_id": "AILAB-PROMPT-009-DATABRICKS",
+      "prompt_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/blob/main/docs/prompts/tasks/AILAB-10_fase2-databricks-medallion-mlflow.md",
+      "branch_suggested": "feature/AILAB-10-databricks",
+      "commit_convention": "AILAB-10 feat(data): pipeline medallion ANP no Databricks"
     }
   ],
   "blocks_links_expected": [
@@ -353,7 +393,22 @@
       "AILAB-10"
     ]
   ],
-  "prompt_catalog_index": "prompts/CATALOG.md",
-  "reproducibility_doc": "08-REPRODUCIBILITY.md",
-  "jira_urls_require_login": true
+  "prompt_catalog_index": "docs/prompts/README.md",
+  "reproducibility_doc": "docs/08-REPRODUCIBILITY.md",
+  "jira_urls_require_login": true,
+  "manifest_snapshot_at": "2026-11-09T14:21:35-0300",
+  "prompt_catalog": "docs/prompts/README.md",
+  "map_path": "docs/map/jira-manifest.json",
+  "prompt_layout": {
+    "catalog": "docs/prompts/README.md",
+    "core_rules": "docs/prompts/CORE-RULES.md",
+    "epics": "docs/prompts/epicos/",
+    "tasks": "docs/prompts/tasks/",
+    "templates": "docs/prompts/templates/",
+    "closure_reports": "docs/relatorios/",
+    "agent_instructions": "AGENTS.md",
+    "naming": "<JIRA_KEY>_<slug>.md",
+    "version_field": "prompt_version (frontmatter) + histórico no arquivo"
+  },
+  "notes": "Docs/mapa/catálogo de prompts publicados no GitHub. Implementação de app não iniciada."
 }

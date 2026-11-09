@@ -65,7 +65,7 @@
   "implementation_status": "not_implemented",
   "notes": "Docs/mapa/prompts publicados no GitHub. Implementação de app não iniciada.",
   "map_path": "map/jira-manifest.json",
-  "prompt_catalog": "prompts/CATALOG.md",
+  "prompt_catalog": "docs/prompts/README.md",
   "reproducibility_doc": "08-REPRODUCIBILITY.md",
   "publication_blocked": false,
   "manifest_snapshot_at": "2026-11-08T21:42:49-0300",

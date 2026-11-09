@@ -1,4 +1,4 @@
-**Mapa:** `map/EPIC-TASK-MAP.md` · **Manifesto:** `map/jira-manifest.json` · **Catálogo:** `prompts/CATALOG.md`
+**Mapa:** [`../map/EPIC-TASK-MAP.md`](../map/EPIC-TASK-MAP.md) · **Manifesto:** [`../map/jira-manifest.json`](../map/jira-manifest.json) · **Catálogo:** [`../prompts/README.md`](../prompts/README.md)
 
 # Backlog — Epic + Issues-as-a-Prompt (ANP GLP)
 

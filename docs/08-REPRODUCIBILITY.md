@@ -1,20 +1,20 @@
 # Reprodutibilidade e sincronia de ambientes
 
-**Atualizado:** 2026-11-08 21:42 America/Sao_Paulo
+**Atualizado:** 2026-11-09 14:21 America/Sao_Paulo
 
 ## Princípio
 
 | O quê | Onde |
 | --- | --- |
 | Status / prioridade / workflow | **Jira** (fonte operacional) |
-| Specs, ADRs, mapa, prompts versionados | **Git** (após publish; agora local docs-pack) |
+| Specs, ADRs, mapa, prompts versionados | **Git** (`docs/`) |
 | Execução de código | VS Code no repo https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab |
 
 **Nenhuma integração app GitHub↔Jira é alegada.** Sync = checklist manual (`map/SYNC-CHECKLIST.md`).
 
 ## Catálogo de prompts
 
-Ver `prompts/CATALOG.md`. Família atual = **vscode Issue-as-a-Prompt**. Runtime/agent/evals = pasta reservada.
+Ver [`prompts/README.md`](prompts/README.md). Um arquivo por issue Jira (`prompts/epicos/` e `prompts/tasks/`, nome `<CHAVE>_<slug>.md`), com prompt canônico, prompt executivo (ritual de início de turno) e histórico de versões. Regras comuns em [`prompts/CORE-RULES.md`](prompts/CORE-RULES.md). Evidências de execução vão para [`relatorios/`](relatorios/). Runtime/agent/evals = pasta reservada `prompts/runtime/`.
 
 ## Não-determinismo LLM
 
@@ -22,4 +22,4 @@ Pin de prompt+deps+corpus melhora **reprodutibilidade de processo**, não garant
 
 ## Publicação
 
-Esta preparação é **só documental local**. Publicação no GitHub = passo posterior (VS Code/humano). 
+Documentação, mapa e catálogo publicados em `main`. Implementação de aplicação ainda não iniciada.
