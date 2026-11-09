@@ -9,9 +9,10 @@
   "repo_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab",
   "repo_status": "docs_published_implementation_not_started",
   "publication": {
-    "github_commit": "pending_this_push",
+    "github_commit": "d3b673bac5cbc4a2a82eac480a7b1f4b614ad1e5",
+    "github_commit_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab/commit/d3b673bac5cbc4a2a82eac480a7b1f4b614ad1e5",
     "github_pr": null,
-    "note": "Docs/prompts/mapa commitados em main; implementação app não iniciada. Jira URLs require maintainer login."
+    "note": "Docs/prompts/mapa em main; implementação app não iniciada. URLs Jira exigem login do mantenedor."
   },
   "jira": {
     "cloudId": "dde33714-3bda-4d37-949e-78d67404bd5e",
