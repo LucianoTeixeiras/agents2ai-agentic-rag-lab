@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_id": "ailab-jira-manifest",
+  "snapshot_at": "2026-11-08T21:42:49-0300",
+  "snapshot_timezone": "America/Sao_Paulo",
+  "snapshot_note": "Status/priority are a dated snapshot, NOT live auto-sync. Reconcile manually via SYNC-CHECKLIST.",
+  "auto_sync": false,
+  "github_jira_app_integration_claimed": false,
+  "repo_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab",
+  "repo_status": "docs_published_implementation_not_started",
+  "publication": {
+    "github_commit": "pending_this_push",
+    "github_pr": null,
+    "note": "Docs/prompts/mapa commitados em main; implementação app não iniciada. Jira URLs require maintainer login."
+  },
+  "jira": {
+    "cloudId": "dde33714-3bda-4d37-949e-78d67404bd5e",
+    "project_key": "AILAB",
+    "project_id": "10320",
+    "base_browse_url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/"
+  },
+  "sources_of_truth": {
+    "operational_status_priority": "jira",
+    "versioned_docs_prompts_map": "git",
+    "implementation": "not_started"
+  },
+  "adrs_status": "Proposto",
+  "issues": [
+    {
+      "temp": "EPIC-1",
+      "lab": null,
+      "key": "AILAB-1",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-1",
+      "type": "Epic",
+      "summary": "Lab ANP GLP: RAG docs oficiais + MCP API + FastAPI (fase 2 Azure/Databricks)",
+      "parent": null,
+      "phase": "1+2",
+      "risk": null,
+      "blocks": [],
+      "blocked_by": [],
+      "executor": "mixed",
+      "prompt_kind": "epic-context",
+      "prompt_id": "AILAB-PROMPT-000-EPIC",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-000-EPIC.v1.md",
+      "deliverables": [
+        "Visão épica",
+        "Orquestração AILAB-2..10",
+        "Critérios DoD fase 1"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-01",
+      "lab": "LAB-01",
+      "key": "AILAB-2",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-2",
+      "type": "Tarefa",
+      "summary": "[LAB-01] Revisar e aceitar pacote documental ANP GLP",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "low",
+      "blocks": [
+        "AILAB-3"
+      ],
+      "blocked_by": [],
+      "executor": "humano",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-001-REVIEW-DOCS",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-001-REVIEW-DOCS.v1.md",
+      "deliverables": [
+        "Aceite humano ou lista de diffs",
+        "ADRs permanecem Proposto até aceite"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-02",
+      "lab": "LAB-02",
+      "key": "AILAB-3",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-3",
+      "type": "Tarefa",
+      "summary": "[LAB-02] Bootstrap VS Code no repo existente (docs ANP)",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "low",
+      "blocks": [
+        "AILAB-4",
+        "AILAB-5"
+      ],
+      "blocked_by": [
+        "AILAB-2"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-002-BOOTSTRAP",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-002-BOOTSTRAP.v1.md",
+      "deliverables": [
+        "docs/ no repo",
+        "README ANP",
+        ".gitignore",
+        "venv",
+        "zero secrets"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-03",
+      "lab": "LAB-03",
+      "key": "AILAB-4",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-4",
+      "type": "Tarefa",
+      "summary": "[LAB-03] RAG: corpus oficial ANP (manual/metadata) + citações",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "medium",
+      "blocks": [
+        "AILAB-6"
+      ],
+      "blocked_by": [
+        "AILAB-3"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-003-RAG-DOCS",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-003-RAG-DOCS.v1.md",
+      "deliverables": [
+        "corpus oficial versionado",
+        "retrieve+citations",
+        "testes G01–G03"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-04",
+      "lab": "LAB-04",
+      "key": "AILAB-5",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-5",
+      "type": "Tarefa",
+      "summary": "[LAB-04] LangGraph + MCP ANP GLP read-only (API/snapshot)",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "medium",
+      "blocks": [
+        "AILAB-6"
+      ],
+      "blocked_by": [
+        "AILAB-3"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-004-MCP-ANP",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-004-MCP-ANP.v1.md",
+      "deliverables": [
+        "cliente ANP paginado",
+        "snapshot mínimo",
+        "MCP allowlist",
+        "LangGraph"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-05",
+      "lab": "LAB-05",
+      "key": "AILAB-6",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-6",
+      "type": "Tarefa",
+      "summary": "[LAB-05] FastAPI E2E (snapshot default, live opt-in)",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "medium",
+      "blocks": [
+        "AILAB-7"
+      ],
+      "blocked_by": [
+        "AILAB-4",
+        "AILAB-5"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-005-FASTAPI-E2E",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-005-FASTAPI-E2E.v1.md",
+      "deliverables": [
+        "/health",
+        "/ask",
+        "schemas",
+        "e2e snapshot"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-06",
+      "lab": "LAB-06",
+      "key": "AILAB-7",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-7",
+      "type": "Tarefa",
+      "summary": "[LAB-06] Evals + tracing + guardrails + minimização de dados",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "medium",
+      "blocks": [
+        "AILAB-8"
+      ],
+      "blocked_by": [
+        "AILAB-6"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-006-EVALS-GUARDRAILS",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-006-EVALS-GUARDRAILS.v1.md",
+      "deliverables": [
+        "goldens",
+        "trace_id",
+        "redaction",
+        "política snapshot"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-07",
+      "lab": "LAB-07",
+      "key": "AILAB-8",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-8",
+      "type": "Tarefa",
+      "summary": "[LAB-07] CI snapshot + demo 5 min + README ANP",
+      "parent": "AILAB-1",
+      "phase": "1",
+      "risk": "low",
+      "blocks": [
+        "AILAB-9",
+        "AILAB-10"
+      ],
+      "blocked_by": [
+        "AILAB-7"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-007-CI-DEMO",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-007-CI-DEMO.v1.md",
+      "deliverables": [
+        "CI sem live",
+        "demo 5 min",
+        "README atribuição/limites"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-08",
+      "lab": "LAB-08",
+      "key": "AILAB-9",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-9",
+      "type": "Tarefa",
+      "summary": "[LAB-08][Fase 2] Azure OpenAI prático (credenciais/custo autorizados)",
+      "parent": "AILAB-1",
+      "phase": "2",
+      "risk": "high",
+      "blocks": [],
+      "blocked_by": [
+        "AILAB-8"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-008-AZURE-OPENAI",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-008-AZURE-OPENAI.v1.md",
+      "deliverables": [
+        "adapter Azure autorizado OU bloqueio explícito",
+        "rollback fase 1",
+        "zero secrets"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    },
+    {
+      "temp": "LAB-09",
+      "lab": "LAB-09",
+      "key": "AILAB-10",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-10",
+      "type": "Tarefa",
+      "summary": "[LAB-09][Fase 2] Databricks Bronze/Silver/Gold + MLflow mínimo",
+      "parent": "AILAB-1",
+      "phase": "2",
+      "risk": "high",
+      "blocks": [],
+      "blocked_by": [
+        "AILAB-8"
+      ],
+      "executor": "vscode",
+      "prompt_kind": "vscode-issue-as-prompt",
+      "prompt_id": "AILAB-PROMPT-009-DATABRICKS",
+      "prompt_version": "1.0.0",
+      "prompt_path": "prompts/vscode/AILAB-PROMPT-009-DATABRICKS.v1.md",
+      "deliverables": [
+        "pipeline B/S/G mínimo autorizado OU bloqueio",
+        "MLflow mín. se viável",
+        "VS opcional não artificial"
+      ],
+      "jira_status_snapshot": "A fazer",
+      "jira_priority_snapshot": "Medium"
+    }
+  ],
+  "blocks_links_expected": [
+    [
+      "AILAB-2",
+      "AILAB-3"
+    ],
+    [
+      "AILAB-3",
+      "AILAB-4"
+    ],
+    [
+      "AILAB-3",
+      "AILAB-5"
+    ],
+    [
+      "AILAB-4",
+      "AILAB-6"
+    ],
+    [
+      "AILAB-5",
+      "AILAB-6"
+    ],
+    [
+      "AILAB-6",
+      "AILAB-7"
+    ],
+    [
+      "AILAB-7",
+      "AILAB-8"
+    ],
+    [
+      "AILAB-8",
+      "AILAB-9"
+    ],
+    [
+      "AILAB-8",
+      "AILAB-10"
+    ]
+  ],
+  "prompt_catalog_index": "prompts/CATALOG.md",
+  "reproducibility_doc": "08-REPRODUCIBILITY.md",
+  "jira_urls_require_login": true
+}

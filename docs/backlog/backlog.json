@@ -1,0 +1,72 @@
+{
+  "repo_url": "https://github.com/LucianoTeixeiras/agents2ai-agentic-rag-lab",
+  "repo_created": true,
+  "repo_status": "docs_published_implementation_not_started",
+  "docs_published_to_github": true,
+  "jira_space": "AILAB",
+  "jira_issues_created": true,
+  "data_source": "ANP_revendedores_GLP_API",
+  "phase1": [
+    "AILAB-2",
+    "AILAB-3",
+    "AILAB-4",
+    "AILAB-5",
+    "AILAB-6",
+    "AILAB-7",
+    "AILAB-8"
+  ],
+  "phase2": [
+    "AILAB-9",
+    "AILAB-10"
+  ],
+  "mapping_temp_to_jira": {
+    "EPIC-1": {
+      "key": "AILAB-1",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-1"
+    },
+    "LAB-01": {
+      "key": "AILAB-2",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-2"
+    },
+    "LAB-02": {
+      "key": "AILAB-3",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-3"
+    },
+    "LAB-03": {
+      "key": "AILAB-4",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-4"
+    },
+    "LAB-04": {
+      "key": "AILAB-5",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-5"
+    },
+    "LAB-05": {
+      "key": "AILAB-6",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-6"
+    },
+    "LAB-06": {
+      "key": "AILAB-7",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-7"
+    },
+    "LAB-07": {
+      "key": "AILAB-8",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-8"
+    },
+    "LAB-08": {
+      "key": "AILAB-9",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-9"
+    },
+    "LAB-09": {
+      "key": "AILAB-10",
+      "url": "https://lucianoteixeiras-1773934569563.atlassian.net/browse/AILAB-10"
+    }
+  },
+  "blocks_links_count": 9,
+  "implementation_status": "not_implemented",
+  "notes": "Docs/mapa/prompts publicados no GitHub. Implementação de app não iniciada.",
+  "map_path": "map/jira-manifest.json",
+  "prompt_catalog": "prompts/CATALOG.md",
+  "reproducibility_doc": "08-REPRODUCIBILITY.md",
+  "publication_blocked": false,
+  "manifest_snapshot_at": "2026-11-08T21:42:49-0300"
+}
